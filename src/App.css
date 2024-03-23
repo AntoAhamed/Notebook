@@ -1,0 +1,247 @@
+.App {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    background-color: #E0EAFC;
+    color: black;
+}
+
+.App #home .row:nth-child(2) {
+    margin-top: 10%;
+    margin-bottom: 15%;
+    text-align: center;
+}
+
+.App #home .row:nth-child(2) img {
+    height: 320px;
+    width: 70%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.App #home .row:nth-child(2) img:hover {
+    height: 350px;
+    width: 74%;
+    transition: 0.5s;
+}
+
+.App #home .row:nth-child(2) .col-6:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.App #home .row:nth-child(2) p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.App #home .row:nth-child(4) h1 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 11%;
+    margin-bottom: 4%;
+}
+
+.App #home .row:nth-child(5) {
+    margin-bottom: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.App #home .row:nth-child(5) .card {
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #a3c1fa;
+    transition: 0.5s;
+}
+
+.App #home .row:nth-child(5) img {
+    height: 40px;
+    width: 40px;
+    margin: 70px 0px;
+}
+
+.App #home .row:nth-child(5) p {
+    padding: 15px;
+}
+
+.App #home .row:nth-child(5) p {
+    padding: 15px;
+}
+
+.App #home .row:nth-child(6) {
+    text-align: center;
+    padding: 10% 5%;
+    margin-bottom: 15%;
+    background-color: white;
+}
+
+.App #about .row:nth-child(2) {
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.App #contact .row:nth-child(2) {
+    margin-top: 7%;
+    margin-bottom: 9%;
+    word-spacing: 3px;
+}
+
+.App #add .row:nth-child(2) {
+    margin: 6% 3%;
+}
+
+.App #add .title {
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-bottom: 1px solid rgb(209, 207, 207);
+}
+
+.App #add .desc {
+    border: none;
+    outline: none;
+    padding: 20px;
+}
+
+.App #add form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+    padding-right: 60px;
+}
+
+.App #add button:nth-child(1) {
+    border-radius: 4px;
+    background: #00D775;
+    margin: 10px 0px;
+    border: none;
+    padding: 5px 20px;
+    transition: 0.5s;
+}
+
+.App #add button:nth-child(1):hover {
+    background: #00a55b;
+    color: white;
+    transition: 0.5s;
+}
+
+.App #add button:nth-child(2) {
+    border-radius: 4px;
+    background: #FF013C;
+    margin: 10px 10px;
+    border: none;
+    padding: 5px 20px;
+    transition: 0.5s;
+}
+
+.App #add button:nth-child(2):hover {
+    background: #c70230;
+    color: white;
+    transition: 0.5s;
+}
+
+.App #add button:nth-child(3) {
+    border-radius: 4px;
+    background: #9195F6;
+    margin: 10px 0px;
+    border: none;
+    padding: 5px 20px;
+    transition: 0.5s;
+}
+
+.App #add button:nth-child(3):hover {
+    background: #4b51ff;
+    color: white;
+    transition: 0.5s;
+}
+
+.App #notes .row:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.App #note .card {
+    background-color: #bfc0f0;
+    border: none;
+}
+
+.App #footer {
+    text-align: center;
+    background-color: #111111;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .App #home .row:nth-child(2) {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
+    .App #home .row:nth-child(2) .col-6:nth-child(1) {
+        padding: 20px;
+    }
+
+    .App #home .row:nth-child(2) p {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    .App #home .row:nth-child(2) img:hover {
+        height: 350px;
+        width: 90%;
+        transition: 0.5s;
+    }
+
+    .App #home .row:nth-child(5) {
+        margin-bottom: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .App #home .row:nth-child(5) .card {
+        width: 6.5rem;
+        transition: 0.5s;
+    }
+
+    .App #home .row:nth-child(5) img {
+        height: 20px;
+        width: 20px;
+        margin: 40px 0px;
+        transition: 0.5s;
+    }
+
+    .App #home .row:nth-child(5) p {
+        font-size: 15px;
+    }
+
+    .App #home .row:nth-child(6) {
+        margin-bottom: 25%;
+    }
+
+    .App #add .row:nth-child(2) {
+        margin: 15% 3% 15% 3%;
+    }
+
+    .App #add form {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
