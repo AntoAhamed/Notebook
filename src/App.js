@@ -93,8 +93,6 @@ function App() {
     setToEditNote(note);
     setNewTitle(note.title);
     setNewDesc(note.desc);
-
-    setNotes(notes.filter((e) => { return e !== note; })) //filter toEditNote from existing notes
   }
 
   //function to save the edited note
@@ -102,12 +100,16 @@ function App() {
     e.preventDefault();
 
     if (newTitle.length > 0 && newDesc.length > 0) {
+      let tmpNotes = notes;
+
+      tmpNotes = tmpNotes.filter(e => e !== toEditNote); //it deletes toEditNote
+
       let sno;
 
-      if (notes.length === 0) {
+      if (tmpNotes.length === 0) {
         sno = 0;
       } else {
-        sno = notes[notes.length - 1].sno;
+        sno = tmpNotes[tmpNotes.length - 1].sno;
       }
 
       const editedNote = {
@@ -118,7 +120,9 @@ function App() {
         time: time
       }
 
-      setNotes([...notes, editedNote]);
+      tmpNotes.push(editedNote);
+
+      setNotes(tmpNotes);
 
       setToEditNote({});
       setNewTitle('');
